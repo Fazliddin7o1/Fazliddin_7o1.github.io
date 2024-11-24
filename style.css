@@ -4,7 +4,7 @@ body{
     display:flex;
     justify-content: center;
     align-items:center;
-    background-color:rgb(221, 198, 66);
+    background-color:white;
 }
 
 
@@ -21,7 +21,7 @@ body{
 
 }
 
-img{
+.im6{
     margin-top:60px;
     margin-left:180px;
     width: 250px;
@@ -33,10 +33,14 @@ img{
 
 header{
     display:flex;
-    border-bottom: 3px solid rgb(221, 198, 66);
+    border-bottom: 3px solid rgb(0, 0, 0);
     
 }
 
+
+.h3{
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+}
 
 a{
     margin-top:27px;
@@ -48,7 +52,7 @@ color:black;
 
 
 .h3{
-    color:white;
+    color:rgb(10, 10, 10);
     margin-left:40px;
     margin-top:100px;
 }
@@ -63,10 +67,16 @@ color:black;
 
 .a7{
     font-size:50px;
+    width: 170px;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     position:fixed;
-    margin-top:300px;
-    margin-left:100px;
-    color:green
+    margin-top:400px;
+    margin-left:30px;
+    background-color:chocolate;
+    color:white;
 }
 
 
@@ -93,15 +103,44 @@ p{
     background-color:rgb(221, 104, 9);
     color:white;
 
-
     cursor:pointer;
 }
 
 
 .a5{
+    position:fixed;
     margin-top:100px;
-    font-size:50px;
+    width:90px;
+    margin-right:51px;
+    background-color: chocolate;
+
+    height:30px;
+    font-size:10px;
+    color:rgb(0, 0, 0);
+    display:flex;
+    justify-content:center;
+    align-items:center;
     color:white;
+    
+   
+}
+
+.a55{
+    position:fixed;
+    margin-top:170px;
+    width:120px;
+    margin-right:51px;
+    background-color: rgb(102, 255, 0);
+    
+    height:30px;
+    font-size:10px;
+    color:rgb(0, 0, 0);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    
+   
 }
 
 
@@ -121,11 +160,11 @@ p{
 
 
 footer {
-    background-color: #f4f4f4; /* Footer foni */
-    text-align: center; /* Markazga hizalash */
+    background-color: #f4f4f4; 
+    text-align: center; 
     padding: 20px;
     margin-top: 155px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soya */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 footer p {
@@ -148,4 +187,134 @@ h2{
     font-size:50px;
     margin-left:45px;
     position:fixed;
+}
+
+
+
+.pp{
+    font-size:20px;
+    margin:0px;
+}
+
+.img7{
+    border-radius:10px;
+    
+    margin-bottom:100px;
+    width: 200px;
+    height:130px;
+    border: solid 2px black;
+}
+
+
+.dv4{
+    border-radius:10px;
+    width:200px;
+    height:230px;
+   
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:20px;
+    border:solid 2px black;
+
+}
+
+
+.bdy{
+    
+          gap:50px;
+      
+}
+
+/* Telefon ekranlari uchun */
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: white;
+        padding: 10px;
+    }
+
+    .box {
+        width: 95%; /* Mobil qurilmaga moslashish uchun kenglikni kamaytirish */
+        height: auto; /* Balandlikni avtomatik qilish */
+        margin-top: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box soyasini biroz yengillashtirish */
+    }
+
+    header {
+        flex-direction: column; /* Linklarni ustma-ust chiqarish */
+        align-items: center;
+        padding: 10px;
+        border-bottom: 2px solid #000;
+    }
+
+    header a {
+        margin: 10px 0; 
+        font-size: 16px;
+    }
+
+    .im6 {
+        margin: 20px auto; 
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+    }
+
+    .hi {
+        font-size: 30px; 
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .intro {
+        font-size: 16px;
+        margin: 10px 0;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    button.hir {
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+        margin: 20px auto;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .dv4 {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        margin: 20px 0;
+        padding: 10px;
+        border: solid 1px black;
+    }
+
+    .img7 {
+        width: 100%;
+        height: auto;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .a5, .a55 {
+        margin-top: 10px;
+        width: 100%;
+        font-size: 14px;
+        height: 35px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px;
+        margin-top: 20px;
+    }
 }
